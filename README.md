@@ -5,7 +5,7 @@ Dubbo Springboot Starter Demo(Provider、Consumer、Monitor)
 ## apache官方的starter,方便快速开发dubbo框架的rpc服务
 1. 启动zookeeper，本机地址为localhost:2181 
 2. 创建服务提供方工程，新建两个moudule，分别是dubbo-provider-api,dubbo-provider-service 
-  	-   2.1.api工程添加服务提供者的接口和相关接口入参出参DTO
+-     2.1.api工程添加服务提供者的接口和相关接口入参出参DTO
 -   	2.2.service工程添加api接口实现类,通过@Service注解暴露接口给zk注册中心。
 3. 创建服务消费方工程fubbo-consumer,添加dubbo-provider-api的maven依赖,在引用地方使用@Reference注解引用服务提供方的接口。
 4. 下载dubbo-admin工程，使用mvn clean package 打包最新的dubbo-admin的dashboard的jar包，并使用java -jar的方式进行启动。
