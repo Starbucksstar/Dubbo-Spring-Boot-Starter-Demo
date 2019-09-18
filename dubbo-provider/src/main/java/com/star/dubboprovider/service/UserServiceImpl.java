@@ -9,12 +9,11 @@ import com.star.dubboprovider.repository.UserRepository;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@Service
+@Service(group = "dubbo")
 public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
-
 
     @Override
     public String queryUser(UserKeyDTO userKeyDTO) {

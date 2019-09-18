@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class DubboConsumerController {
 
-    @Reference
+    @Reference(group = "dubbo")
     private UserService userService;
 
     @RequestMapping(value = "/query")
